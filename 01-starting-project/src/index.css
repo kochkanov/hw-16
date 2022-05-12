@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  background: #fff;
+}
+
+body {
+  margin: 0;
+  
+}
+
+.main {
+  margin-top: 5rem;
+  width: 100%;
+  height: 700px;
+}

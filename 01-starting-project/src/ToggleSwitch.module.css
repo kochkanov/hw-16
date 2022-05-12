@@ -1,0 +1,49 @@
+.togswitch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+  }
+  .togswitch input[type="checkbox"] {
+    display: none;
+  }
+  .togswitch .switch {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 25px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.2s ease;
+  }
+  
+  .togswitch .switch::before {
+    
+    position: absolute;
+    padding-top: 3px;
+    padding-left: 5px;
+    content: "on";
+    color:white;
+    left: 2px;
+    top: 0px;
+    bottom: 5px;
+    width: 27px;
+    height: 27px;
+    background-color: rgb(28, 24, 24);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  .togswitch input[type="checkbox"]:checked + .switch::before {
+    content:'off';
+    font-size: 16px;
+    
+    color:rgb(15, 13, 13);
+    padding-top: 2px;
+    transform: translateX(25px);
+    background-color: #f5f7f9;
+  }
+  .togswitch input[type="checkbox"]:checked + .switch {
+    background-color: #c9d4e0;
+  }
